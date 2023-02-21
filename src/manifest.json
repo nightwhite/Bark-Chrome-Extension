@@ -1,6 +1,6 @@
 {
-    "name": "Bark",
-    "version": "1.2.1",
+    "name": "Nw Bark Push",
+    "version": "1.0.1",
     "manifest_version": 2,
     "description": "push to iPhone",
     "permissions": [
@@ -37,6 +37,6 @@
             "48": "bark_48.png",
             "128": "bark_128.png"
         },
-        "default_title": "Bark"
+        "default_title": "Nw Bark Push"
     }
 }

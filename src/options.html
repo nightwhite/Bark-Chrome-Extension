@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Bark Settings</title>
 
 	<style>
@@ -19,41 +20,41 @@
 <body>
 	<div id="status"></div>
 
-	<h3>Default Push Content</h3>
-	<span>This option is used to control what is pushed when the icon on the menu bar is clicked by default.</span>
+	<h3>Default Push Content 默认推送内容</h3>
+	<span>点击菜单栏按钮,推送的内容</span>
 	<div>
 		<input type="radio" id="clipboard" name="default_push_content" value="clipboard">
-		<label for="clipboard">Clipboard</label>
+		<label for="clipboard">剪切板</label>
 	</div>
 
 	<div>
 		<input type="radio" id="URL" name="default_push_content" value="URL">
-		<label for="URL">Current page URL</label>
+		<label for="URL">当前页面链接</label>
 	</div>
 	<hr>
-	<h3>AutoCopy</h3>
+	<h3>AutoCopy 自动复制</h3>
 	<div>
 		<input type="radio" id="yes" name="auto_copy" value="yes">
-		<label for="yes">Yes</label>
+		<label for="yes">是</label>
 	</div>
 
 	<div>
 		<input type="radio" id="no" name="auto_copy" value="no">
-		<label for="no">No</label>
+		<label for="no">否</label>
 	</div>
 	<hr>
-	<h4>Tips</h4>
+	<h4>Tips 提示</h4>
 	<ul>
-		<li>Now also supports Android devices, you can download the mobile applications from <a href="https://github.com/xlvecle/PushLite" target=”_blank”>here</a></li>
-		<li>If you have multiple addresses set up, plese use right-click menu to push messages to the specified device.</li>
+		<li>现在已经支持安卓了,你也可以在这里下载 <a href="https://github.com/xlvecle/PushLite" target=”_blank”>here</a></li>
+		<li>如果你有多个设备,右键可以选择你要推送的设备</li>
 	</ul>
-	<h3>Devices</h3>
+	<h3>Devices 设备</h3>
 	<div id="urls">
 	</div>
 
 	<hr>
 	<h5>
-		New device push URL:
+		New device push URL 新设备推送链接 : 
 	</h5>
 	<div>
 		<input type="radio" id="iPhone" name="device" value="iPhone" checked="checked">
@@ -67,7 +68,7 @@
 		<label>
 			<input type="" name="" id="server_name" style="width: 100px" placeholder="Alias">
 			<input type="" name="" id="server_url" style="width: 300px" placeholder="https://day.app/xxxkeyxxxx/">
-			<button id="add">Add</button>
+			<button id="add">Add 添加</button>
 		</label>
 	</p>
 

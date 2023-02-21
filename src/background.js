@@ -111,14 +111,17 @@ function sendMsg(content, full_server_url = "", msgType = "normal") {
 						icon: "bark_128.png"
 					});
 				};
-
+			
 			if (full_server_url.startsWith("http") || full_server_url.startsWith("https")) {
 				// iPhone push
-				httpGetAsync(full_server_url + encodeURIComponent(content) + "?automaticallyCopy=" + auto_copy_flag, notify_callback);
+				console.log("1111:"+full_server_url + encodeURIComponent(content) + "?automaticallyCopy=" + auto_copy_flag, notify_callback);
+				httpGetAsync(full_server_url  + "%E8%AF%B7%E9%95%BF%E6%8C%89%E6%9C%AC%E9%80%9A%E7%9F%A5%E5%90%8E%E7%82%B9%E5%87%BB%E5%A4%8D%E5%88%B6/Nw%20Bark%20Push?automaticallyCopy=" + auto_copy_flag + "&copy=" + encodeURIComponent(content) + "&icon=https://i.postimg.cc/vmYkmdXL/bark-128.png&level=timeSensitive", notify_callback);
 			} else {
 				// Android push
+				console.log("2222:"+full_server_url, content, notify_callback, msgType);
 				pushAndroidMsg(full_server_url, content, notify_callback, msgType);
 			}
+			
 
 			
 		};
